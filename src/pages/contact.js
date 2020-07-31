@@ -1,8 +1,9 @@
 import React from "react"
+import Layout from "../components/layout"
 
 export default function ContactPage() {
   return (
-    <div>
+    <Layout>
       <h1>Contact</h1>
       <p>
         The best way to reach me is via{" "}
@@ -11,6 +12,6 @@ export default function ContactPage() {
         </a>{" "}
         on Twitter.
       </p>
-    </div>
+    </Layout>
   )
 }
