@@ -28,12 +28,12 @@ export default function BlogPage() {
       <ol>
         {data.allMarkdownRemark.edges.map(function renderPreview(edge, index) {
           return (
-            <Link to={edge.node.fields.slug}>
-              <li key={index}>
+            <li key={index}>
+              <Link to={edge.node.fields.slug}>
                 <h2>{edge.node.frontmatter.title}</h2>
                 <p>{edge.node.frontmatter.date}</p>
-              </li>
-            </Link>
+              </Link>
+            </li>
           )
         })}
       </ol>
