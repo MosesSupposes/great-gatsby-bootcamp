@@ -29,7 +29,7 @@ export default function BlogPage() {
         {data.allMarkdownRemark.edges.map(function renderPreview(edge, index) {
           return (
             <li key={index}>
-              <Link to={edge.node.fields.slug}>
+              <Link to={`/blog/${edge.node.fields.slug}`}>
                 <h2>{edge.node.frontmatter.title}</h2>
                 <p>{edge.node.frontmatter.date}</p>
               </Link>
