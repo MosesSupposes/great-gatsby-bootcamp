@@ -5,7 +5,7 @@ import blogStyles from "./blog.module.scss"
 
 export default function BlogPage() {
   const data = useStaticQuery(graphql`
-    query contentfulPosts {
+    query allContentfulPosts {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
